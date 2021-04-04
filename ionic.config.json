@@ -1,0 +1,7 @@
+{
+  "name": "wechat-frontend-clone",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
