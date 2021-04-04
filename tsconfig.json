@@ -12,7 +12,16 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "es2020",
-    "lib": ["es2018", "dom"]
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "@app/*": ["src/app/*"],
+      "@app/env": ["src/environments/environment"],
+      "@app/core/*": ["src/app/core/*"],
+      "@app/state/*": ["src/app/core/state-management/state/*.state.ts"],
+      "@app/actions/*": ["src/app/core/state-management/actions/*.actions.ts"],
+      "@app/interfaces/*": ["src/app/core/declarations/*.interface.ts"],
+      "@app/enums/*": ["src/app/core/declarations/*.enum.ts"]
+    },
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
